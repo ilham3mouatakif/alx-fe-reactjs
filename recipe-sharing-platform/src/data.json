@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "400g spaghetti",
+            "200g pancetta or bacon",
+            "4 large eggs",
+            "100g Parmesan cheese",
+            "Black pepper to taste",
+            "Salt for pasta water"
+        ],
+        "instructions": [
+            "Cook spaghetti in salted boiling water until al dente.",
+            "Fry pancetta until crispy.",
+            "Beat eggs with grated Parmesan and black pepper.",
+            "Drain pasta, mix with pancetta, then remove from heat.",
+            "Quickly stir in egg mixture to create a creamy sauce.",
+            "Serve immediately with extra Parmesan."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Chicken Tikka Masala",
+        "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "500g chicken breast",
+            "1 cup yogurt",
+            "2 tbsp tikka masala spice",
+            "400g canned tomatoes",
+            "200ml heavy cream",
+            "2 onions, diced",
+            "4 cloves garlic",
+            "Fresh cilantro"
+        ],
+        "instructions": [
+            "Marinate chicken in yogurt and half the spices for 2 hours.",
+            "Grill or bake chicken until cooked through.",
+            "Sauté onions and garlic until soft.",
+            "Add remaining spices and tomatoes, simmer 10 minutes.",
+            "Add cream and cooked chicken, simmer 5 more minutes.",
+            "Garnish with cilantro and serve with rice or naan."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Caesar Salad",
+        "summary": "Fresh romaine lettuce with creamy Caesar dressing, croutons, and Parmesan cheese.",
+        "image": "https://via.placeholder.com/150",
+        "ingredients": [
+            "1 large romaine lettuce",
+            "1 cup croutons",
+            "1/2 cup Parmesan cheese",
+            "2 cloves garlic",
+            "2 anchovy fillets",
+            "1 egg yolk",
+            "2 tbsp lemon juice",
+            "1/2 cup olive oil"
+        ],
+        "instructions": [
+            "Wash and chop romaine lettuce.",
+            "Blend garlic, anchovies, egg yolk, and lemon juice.",
+            "Slowly add olive oil while blending to emulsify.",
+            "Toss lettuce with dressing.",
+            "Top with croutons and shaved Parmesan.",
+            "Serve immediately."
+        ]
+    }
+]
