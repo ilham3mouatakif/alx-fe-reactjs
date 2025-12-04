@@ -1,16 +1,85 @@
-# React + Vite
+# GitHub User Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows users to search for GitHub profiles using the GitHub API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Basic Search**: Search for GitHub users by username
+- **User Information Display**: View user avatar, name, bio, and profile link
+- **Loading States**: Visual feedback during API requests
+- **Error Handling**: Clear error messages when users are not found
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**: UI library
+- **Vite**: Build tool and development server
+- **Axios**: HTTP client for API requests
+- **GitHub API**: Data source for user information
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Navigate to the project directory:
+   ```bash
+   cd github-user-search
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Project Structure
+
+```
+github-user-search/
+├── src/
+│   ├── components/
+│   │   └── Search.jsx          # Main search component
+│   ├── services/
+│   │   └── githubService.js    # GitHub API service
+│   ├── App.jsx                 # Root component
+│   └── main.jsx                # Application entry point
+├── package.json
+└── vite.config.js
+```
+
+## Usage
+
+1. Enter a GitHub username in the search input
+2. Click the "Search" button or press Enter
+3. View the user's profile information
+4. Click "View Profile" to visit their GitHub page
+
+## API Reference
+
+This application uses the GitHub REST API:
+- Endpoint: `https://api.github.com/users/{username}`
+- No authentication required for basic usage
+- Rate limit: 60 requests per hour for unauthenticated requests
+
+## Future Enhancements
+
+- Advanced search with filters (location, repositories count)
+- Pagination for search results
+- User repository listing
+- Deployment to Vercel
+
+## License
+
+This project is part of the ALX Frontend React curriculum.
