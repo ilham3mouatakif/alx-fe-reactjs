@@ -10,20 +10,35 @@ const fetchPosts = async () => {
 };
 
 const PostsComponent = () => {
-    const { data, error, isLoading, isError, refetch } = useQuery(['posts'], fetchPosts);
+    const { data, error, isLoading, isError, refetch } = useQuery({
+        queryKey: ['posts'],
+        queryFn: fetchPosts,
+    });
 
-    if (isLoading) return <div>Loading posts...</div>;
-    if (isError) return <div>Error: {error.message}</div>;
+    if (isLoading) {
+        return <div>Loading posts...</div>;
+    }
+
+    if (isError) {
+        return (
+            <div>
+                <p>Error: {error.message}</p>
+                <button onClick={() => refetch()}>Try Again</button>
+            </div>
+        );
+    }
 
     return (
         <div>
-            <h2>Posts</h2>
-            <button onClick={() => refetch()}>Refetch Posts</button>
+            <h1>Posts</h1>
+            <button onClick={() => refetch()} style={{ marginBottom: '20px' }}>
+                Refetch Posts
+            </button>
             <ul>
-                {data.map(post => (
-                    <li key={post.id}>
-                        <strong>{post.title}</strong>
-                        <p>{post.body}</p>
+                {data.map((post) => (
+                    <li key={post.id} style={{ marginBottom: '10px' }}>
+                        <h3 style={{ margin: '0' }}>{post.title}</h3>
+                        <p style={{ margin: '5px 0' }}>{post.body}</p>
                     </li>
                 ))}
             </ul>
